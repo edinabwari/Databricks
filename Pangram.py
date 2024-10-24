@@ -7,17 +7,12 @@
 import string
 
 def is_pangram():
-    # Get input from the user
-    s = input("Enter a sentence: ")
-    
-    # Create a set of all lowercase alphabets
+   
+    sentence = input("Enter a sentence: ")
     alphabet = set(string.ascii_lowercase)
+    sentence  = sentence .replace(" ", "").lower()
     
-    # Remove spaces and convert the string to lowercase
-    s = s.replace(" ", "").lower()
-    
-    # Create a set of all unique letters in the input string
-    input_letters = set(s)
+    input_letters = set(sentence )
     
     if alphabet.issubset(input_letters):
         print("The sentence is a pangram.")
