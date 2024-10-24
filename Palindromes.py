@@ -4,13 +4,13 @@
 # backward as forward, e.g., madam,kayak,racecar, or a phrase "nurses run"
 
 def is_palindrome():
-    s = input("Enter a word or phrase: ")
+    text = input("Enter a Text : ")
     
-    s = s.replace(" ", "").lower()
+    text = text.replace(" ", "").lower()
     
-    if s == s[::-1]:
-        print("It is a palindrome!")
+    if text == text[::-1]:
+        print("The text is a palindrome")
     else:
-        print("It is not a palindrome.")
+        print("The text is not a palindrome.")
 
 is_palindrome()
